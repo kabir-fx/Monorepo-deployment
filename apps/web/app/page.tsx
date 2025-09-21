@@ -10,4 +10,5 @@ export default async function Home() {
   );
 }
 
-export const revalidate = 60 // revalidate every 60 seconds
+// Force dynamic rendering to avoid database calls during build
+export const dynamic = 'force-dynamic'
